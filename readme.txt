@@ -76,6 +76,10 @@ echo '</ul>';
 
 Yes, just set the border to 0 and adjust settings the hide title and excerpt
 
+== Screenshots ==
+
+1. The options page
+
 == Changelog ==
 
 = 0.1 =
