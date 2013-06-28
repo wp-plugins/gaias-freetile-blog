@@ -40,7 +40,7 @@
         <td><input type="text" name="gaia_ftb_options[borders]" value="<?php echo $gaia_options['borders']; ?>" /></td>
       </tr>
       <tr valign="top">
-        <th scope="row">Multiplier: if random post size: <br />adjust this slightly if you are having layout problems with any 3 column posts. It is a pixel value that adds to the 3 column width (20 = 20px)<br /><br />If not random post size:<br /> this number acts as a multipler to the 'Narrowest Column Width' to account for those posts with a featured image.</th>
+        <th scope="row">Multiplier: if random post size: <br />adjust this slightly if you are having layout problems with any 3 column posts. It is a pixel value that adds to the 3 column width (20 = 20px)<br /><br /><b>NOT CURRENTLY APPLIED TO NON-RANDOM WIDTHS</B><br />If not random post size:<br /> this number acts as a multipler to the 'Narrowest Column Width' to account for those posts with a featured image.</th>
         <td><input type="text" name="gaia_ftb_options[multiplier]" value="<?php if (!empty($gaia_options['multiplier'])) { echo $gaia_options['multiplier']; } else { echo '20'; } ?>" /></td>
       </tr>
       <tr valign="top">
