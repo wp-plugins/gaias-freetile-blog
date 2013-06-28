@@ -12,8 +12,9 @@ Gaia FTB creates a CPT to display the posts using freetile.js and can random set
 
 == Description ==
 
-**Gaia Rendering's FTB Blog is intended for a developer to impliment as it requires additions and changes to theme files.**
-*Please read the Read Me file*
+Gaia Rendering's FTB Blog is intended for a developer to impliment as it requires additions and changes to theme files
+
+Please read the Read Me file
 
 Gaia FTB (Freetile Blog) Blog creates a custom post type that can be filtered by custom taxonomy (dynamically updated) and CAN randomly set the post width to either X, X*2, or X*3.  It also uses the default WP featured image if present.
 
