@@ -12,7 +12,7 @@ Gaia FTB creates a CPT to display the posts using freetile.js and can random set
 
 == Description ==
 
-[GaiarRendering](http://gaiarendering.com/my-work/plugins/gaia-freetile/ "Frontend Live Demo")
+[Frontend Live Demo](http://gaiarendering.com/my-work/plugins/gaia-freetile/ "Frontend Live Demo")
 
 Gaia Rendering's FTB Blog is intended for a developer to impliment as it requires additions and changes to theme files
 
