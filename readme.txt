@@ -28,6 +28,7 @@ Note: your must set the 'Use default Posts or the Gaia Free Tile CPT?' options t
 == Installation ==
 
 By Wordpress Backend:
+
 1. Search for 'Gaia Freetile Blog.'
 1. Click 'Install' from the plugs-in search page.
 1. Click 'Activate' from the plug-in page.
