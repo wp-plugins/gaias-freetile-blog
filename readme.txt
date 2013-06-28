@@ -31,21 +31,23 @@ By Wordpress Backend:
 1. Click 'Install' from the plugs-in search page.
 1. Click 'Activate' from the plug-in page.
 1. Goto Gaia FTB Blog > Options and set column width, margin, padding, and border.
-	1.1 column width should be approximately 1/9th the width of your containing div
-	1.2 **options must be saved upon install for the plugin to act correctly**
+1. column width should be approximately 1/9th the width of your containing div
+1. **options must be saved upon install for the plugin to act correctly**
 1. Place code into your theme files (see below). Refer to the 'examples' directory of the plugin files for code to insert into your theme files.
 1. populate content.
 1. Have fun!
 
 By FTP:
+
 1. Upload to wp-content/plugins
 1. Continue from step 3 above
 
 Short Codes:
-*[gaia_ftb_random] - uses CPT and randomizes the sizes of the post containers
-*[gaia_ftb_not_random] - uses CPT but does not randomize sizes of post containers
-*[gaia_ftb_random_default] - uses WP default posts and randomizes the size of the post container
-*[gaia_ftb_not_random_default] - uses WP default posts but does not randomize the size of the post container
+
+* [gaia_ftb_random] - uses CPT and randomizes the sizes of the post containers
+* [gaia_ftb_not_random] - uses CPT but does not randomize sizes of post containers
+* [gaia_ftb_random_default] - uses WP default posts and randomizes the size of the post container
+* [gaia_ftb_not_random_default] - uses WP default posts but does not randomize the size of the post container
 
 Call back function (place this on the page template you want Gaia FTB Blog to show up, full width / no sidebar is recommended):
 `<?php if(function_exists('gaia_ftb_random')) { gaia_ftb_random(); } //this displays the posts ?>`
