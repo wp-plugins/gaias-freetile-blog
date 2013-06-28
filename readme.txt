@@ -4,7 +4,7 @@ Donate link: http://gaiarendering.com/buy-me-a-beer/
 Tags: freetile.js, freetile blog, custom post type, magazine layout, filterable, filter, photowall, photo wall
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 0.1
+Stable tag: 0.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,10 +38,14 @@ By FTP:
 1. Upload to wp-content/plugins
 2. Continue from step 3 above
 
-
+Short Codes:
+[gaia_ftb_random] - uses CPT and randomizes the sizes of the post containers
+[gaia_ftb_not_random] - uses CPT but does not randomize sizes of post containers
+[gaia_ftb_random_default] - uses WP default posts and randomizes the size of the post container
+[gaia_ftb_not_random_default] - uses WP default posts but does not randomize the size of the post container
 
 Call back function (place this on the page template you want Gaia FTB Blog to show up, full width / no sidebar is recommended):
-`<?php if(function_exists('gaia_ftb_output')) { gaia_ftb_output(); } //this displays the posts ?>`
+`<?php if(function_exists('gaia_ftb_random')) { gaia_ftb_random(); } //this displays the posts ?>`
 
 
 

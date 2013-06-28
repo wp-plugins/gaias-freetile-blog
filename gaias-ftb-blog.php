@@ -4,7 +4,7 @@ Plugin Name: Gaia Rendering Freetile Blog
 Plugin URI: http://gaiarendering.com
 Description: Creates a custom post type which is displayed using the jquery freetile.js plugin 'if (if function exists('gaia_ftb_output') { gaia_ftb_output(); };'. You can also use the [gaia_ftb_random] ro [gaia_ftb_not_random] short codes in you pages or posts, this will over-ride the 'Randomize Post Container Size'.  It is strongly recommend that you use a full width (no sidebar) page template for this plugin's output.
 Author: Dan Beil
-Version: 0.1
+Version: 0.1.1
 Author URI: http://gaiarendering.com
 
 A special thanks to Blindspot Advisors (http://www.blindspot-advisors.com) for helping with development and W Creative (http://www.wcreative-mpls.com) for being my Guinea Pig.
