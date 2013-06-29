@@ -4,7 +4,7 @@ Donate link: http://gaiarendering.com/buy-me-a-beer/
 Tags: freetile.js, freetile blog, custom post type, magazine layout, filterable, filter, photowall, photo wall
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,9 +83,15 @@ Yes, just set the border to 0 and adjust settings the hide title and excerpt
 == Changelog ==
 
 = 0.1 =
+
 * 6-28-13
 * inital upload
 
 = 0.1.1 =
+
 * 6-28-14
 * Updated readme
+
+= 0.1.2 =
+
+* Fixed multiplier for fiexed width output 

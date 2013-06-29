@@ -22,8 +22,12 @@ wp_reset_query(); ?>
   //random height php
   $gaia_options = get_option('gaia_ftb_options');
   $gaiaftb_borders = $gaia_options['borders'] * 2;
-  $gaia_ftb_t_width = $gaia_options['width'] - $gaiaftb_borders;
-  $gaia_static_width = $gaia_ftb_t_width;
+  $gaia_ftb_t_width = $gaia_options['width'];
+  if (has_post_thumbnail()) {
+    $gaia_static_width = ($gaia_ftb_t_width * $gaia_options['multiplier']) + ($gaia_options['margin'] * 2) + ($gaia_options['padding'] * 2) + $gaiaftb_borders;
+  } else {
+    $gaia_static_width = $gaia_ftb_t_width;
+  };
   ?>
   <!--end random height-->
   <!-- lets get the terms-->
