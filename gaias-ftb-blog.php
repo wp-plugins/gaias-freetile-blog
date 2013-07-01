@@ -4,7 +4,7 @@ Plugin Name: Gaia Rendering Freetile Blog
 Plugin URI: http://gaiarendering.com
 Description: Creates a custom post type which is displayed using the jquery freetile.js plugin 'if (if function exists('gaia_ftb_output') { gaia_ftb_output(); };'. You can also use the [gaia_ftb_random] ro [gaia_ftb_not_random] short codes in you pages or posts, this will over-ride the 'Randomize Post Container Size'.  It is strongly recommend that you use a full width (no sidebar) page template for this plugin's output.
 Author: Dan Beil
-Version: 0.1.2
+Version: 0.1.3
 Author URI: http://gaiarendering.com
 
 A special thanks to Blindspot Advisors (http://www.blindspot-advisors.com) for helping with development and W Creative (http://www.wcreative-mpls.com) for being my Guinea Pig.
@@ -18,12 +18,16 @@ add_action('init', 'register_styles_gaia_ftb');
 function gaia_ftb_scripts() {
   wp_enqueue_script('gaia_ftb_enqueue_freetile', '/wp-content/plugins/gaias-freetile-blog/js/freetile.js', array('jquery'), '', '');
 }
-
 add_action('wp_enqueue_scripts', 'gaia_ftb_scripts');
+
+function gaia_admin_css() {
+  wp_enqueue_style('gaia_admin_styles', '/wp-content/plugins/gaias-freetile-blog/css/admin-css.css', '', '', '');
+  wp_enqueue_script('gaia_admin_js', '/wp-content/plugins/gaias-freetile-blog/js/admin-js.js', '', '', 'true');
+}
+add_action('admin_enqueue_scripts', 'gaia_admin_css');
 
 //Create the post type
 add_action('init', 'gaia_ftb_blog_post');
-
 function gaia_ftb_blog_post() {
   include ('inc/gaia-ftb-cpt.php');
 }

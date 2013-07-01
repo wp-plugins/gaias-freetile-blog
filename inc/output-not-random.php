@@ -5,7 +5,7 @@ http://wp.tutsplus.com/tutorials/theme-development/create-a-quicksand-portfolio-
 echo '<ul class="gaia-ftb-filter">';
 echo '<li class="all"><a href="javascript:void(0)" class="ftb-style">all</a></li>';
 $taxonomyName = "gaia_ftb_categories";
-$terms = get_terms($taxonomyName,array('parent' => 0));
+$terms = get_terms($taxonomyName);
 foreach($terms as $term) {
   echo '<li><a class="ftb-style" href="javascript:void(0)" id="'.  $term->slug .'">' . $term->name . '</a></li>';
 }
@@ -21,8 +21,8 @@ wp_reset_query(); ?>
   while ( $ftbloop->have_posts() ) : $ftbloop->the_post();
   //random height php
   $gaia_options = get_option('gaia_ftb_options');
-  $gaiaftb_borders = $gaia_options['borders'] * 2;
-  $gaia_ftb_t_width = $gaia_options['width'];
+  $gaiaftb_borders = str_replace('px', '', $gaia_options['borders']) * 2;
+  $gaia_ftb_t_width = str_replace('px', '', $gaia_options['width']);
   if (has_post_thumbnail()) {
     $gaia_static_width = ($gaia_ftb_t_width * $gaia_options['multiplier']) + ($gaia_options['margin'] * 2) + ($gaia_options['padding'] * 2) + $gaiaftb_borders;
   } else {
@@ -60,7 +60,6 @@ wp_reset_query(); ?>
  </div>
  <?php } ?>
 </li>
-<?php $count++; ?>
 <?php endwhile; ?>
 <?php wp_reset_query(); ?>
 </ul>

@@ -1,7 +1,7 @@
 <?php $gaia_options = get_option('gaia_ftb_options');
-$gaia_m = $gaia_options['margin'];
-$gaia_w = $gaia_options['padding'];
-$gaia_b = $gaia_options['borders'];
+$gaia_m = str_replace('px', '', $gaia_options['margin']);
+$gaia_w = str_replace('px', '', $gaia_options['padding']);
+$gaia_b = str_replace('px', '', $gaia_options['borders']);
 ?>
 <style type="text/css">
 ul.gaia-ftb-filter {

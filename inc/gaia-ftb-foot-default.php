@@ -39,7 +39,7 @@
 })();
 </script>
 <?php
-$terms = get_terms('category', $args);
+$terms = get_terms('category');
 $count = count($terms);
 $i=0;
 if ($count > 0) {
@@ -54,7 +54,8 @@ if ($count > 0) {
         $('ul.gaiaftb').freetile({
          animate: true,
          selector: '.<?php echo $term->slug; ?>',
-         elementDelay: 50
+         elementDelay: 50,
+         containerAnimate: true
        });
       })
       );
