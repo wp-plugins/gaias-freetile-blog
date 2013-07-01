@@ -94,4 +94,10 @@ Yes, just set the border to 0 and adjust settings the hide title and excerpt
 
 = 0.1.2 =
 
-* Fixed multiplier for fiexed width output 
+* Fixed multiplier for fiexed width output
+
+= 0.1.3 =
+
+* Sterilized user settings to allow for the use of 'px'
+* Cleaned up php to removed un-needed warning
+* Updated admin page with known settings and css
