@@ -12,7 +12,7 @@ Gaia FTB creates a CPT to display the posts using freetile.js and can random set
 
 == Description ==
 
-Follow me on Twitter for updates and new stuff @add_action_dan
+Follow me on Twitter for updates and new stuff! @add_action_dan
 
 [Frontend Live Demo](http://gaiarendering.com/my-work/plugins/gaia-freetile/ "Frontend Live Demo")
 
