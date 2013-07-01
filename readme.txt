@@ -103,3 +103,8 @@ Yes, just set the border to 0 and adjust settings the hide title and excerpt
 * Sterilized user settings to allow for the use of 'px'
 * Cleaned up php to removed un-needed warning
 * Updated admin page with known settings and css
+
+= 0.1.4 =
+
+* Updated non random width equation though still having issues with '3 wide'
+* Added twitter handle to description
