@@ -8,7 +8,7 @@ Stable tag: 0.1.5
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Gaia FTB creates a CPT to display the posts using freetile.js and can random sets the width  to either x, 2x, or 3x. Options must be saved upon install.
+Gaia FTB creates a CPT or use default posts to display posts using freetile.js
 
 == Description ==
 
