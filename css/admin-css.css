@@ -1,0 +1,12 @@
+div.gaia-known {
+	display: none;
+}
+h3.gaia-known {
+	cursor: pointer;
+}
+ul.gaia-known {
+	margin: 10px;
+}
+ul.gaia-known li {
+	margin: 6px 6px 6px 25px;
+}
