@@ -26,7 +26,7 @@ wp_reset_query(); ?>
   $gaia_ftb_margins = str_replace('px', '', $gaia_options['margin'])*2;
   $gaia_ftb_padding = str_replace('px', '', $gaia_options['padding']*2);
   if (has_post_thumbnail()) {
-    $gaia_static_width = ((($gaia_ftb_t_width+$gaia_ftb_margins) * $gaia_options['multiplier'])+$gaiaftb_borders);
+    $gaia_static_width = ((($gaia_ftb_t_width+$gaia_ftb_margins+$gaia_ftb_padding+$gaiaftb_borders) * $gaia_options['multiplier'])-$gaia_ftb_padding-$gaia_ftb_margins);
   } else {
     $gaia_static_width = $gaia_ftb_t_width;
   };
